@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat '"C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\plugins\maven\lib\maven3\bin\mvn" clean install'
+                bat '"C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2\\plugins\\maven\\lib\\maven3\\bin\\mvn" clean install'
             }
         }
         stage('Test') {
             steps {
-                bat '"C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\plugins\maven\lib\maven3\bin\mvn" test'
+                bat '"C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2\\plugins\\maven\\lib\\maven3\\bin\\mvn" test'
             }
             post {
                 success {
