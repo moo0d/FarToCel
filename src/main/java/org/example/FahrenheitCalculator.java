@@ -14,4 +14,8 @@ public class FahrenheitCalculator {
         return (float) (kel - 273.15);
 
     }
+
+    public double kelvinToFahrenheit(double kelvin) {
+        return 1.8 * (kelvin - 273.15) + 32;
+    }
 }

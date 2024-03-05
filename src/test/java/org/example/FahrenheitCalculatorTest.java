@@ -24,4 +24,11 @@ public class FahrenheitCalculatorTest {
         assertEquals(-173.15, FahrenheitCalculator.kelvintoCel(100), 0.001);
     }
 
+    @Test
+    public void convertKelToFarTest() {
+        FahrenheitCalculator fahrenheitCalculator = new FahrenheitCalculator();
+        assertEquals(-459.67, fahrenheitCalculator.kelvinToFahrenheit(0), 0.001);
+        assertEquals(32, fahrenheitCalculator.kelvinToFahrenheit(273.15), 0.001);
+    }
+
 }
